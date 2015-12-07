@@ -14,6 +14,9 @@ class Stock(models.Model):
                           related_name='stock_list',
                           unique=True)
 
+    class Meta:
+        unique_together = (('stock_id', 'dateval', ),)
+
 class Price(models.Model):
     stock_id = models.IntegerField()
     dateval = models.DateField()
@@ -24,3 +27,6 @@ class Price(models.Model):
                           to_fields=('stock_id','dateval',),
                           related_name='price_list',
                           unique=True)
+
+    class Meta:
+        unique_together = (('stock_id', 'dateval', ),)
