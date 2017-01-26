@@ -216,4 +216,4 @@ And now we can see the results of our hard work!
 ![alt text](final_result.png "Django-REST-Framework URL End-point")
 
 
-[1]: http://aergener.github.io/#/blog/foreign_object.html
+[1]: http://aergener.github.io/#/blog/foreign_object
